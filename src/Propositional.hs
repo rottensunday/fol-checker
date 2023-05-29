@@ -17,7 +17,7 @@ fresh vars = head $ filter (not . (`elem` vars)) $ map (("p"++) . show) [0..]
 data Formula =
       T
     | F
-    | Prop PropName -- atomic formulas
+    | Prop PropName
     | Not Formula
     | And Formula Formula
     | Or Formula Formula
